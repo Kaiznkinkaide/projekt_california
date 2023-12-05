@@ -67,6 +67,10 @@ header{
         line-height: 110.76%;
         letter-spacing: -0.0255rem;
     }
+    a:hover{
+        color: black;
+        background-color: white;
+    }
 }
 
 .last{
@@ -80,7 +84,7 @@ header{
     .bigText{
     margin-top: 10vh;
     width: 80%;
-    font-family: Inter;
+    font-family: "Inter";
     font-size: 6.10938rem;
     font-weight: 700;
     line-height: 111.125%;
@@ -108,12 +112,12 @@ header{
         display: flex;
         flex-direction: column;
         p:nth-child(1){
-            font-family: Work Sans;
+            font-family: "Work Sans";
             font-size: 0.875rem;
             font-weight: 400;
         }
         p:nth-child(2){
-            font-family: Inter;
+            font-family: "Inter";
             font-size: 5.42188rem;
             font-weight: 700;
             line-height: 125.216% ;
@@ -125,6 +129,7 @@ header{
         width: 41%;
     }
 }
+
 
 
 
@@ -142,7 +147,7 @@ header{
         gap: 3vh;
         width: 33%;
         h2{
-            font-family: Inter;
+            font-family: "Inter";
             font-size: 5.22394rem;
             font-weight: 700;
             line-height: 98.455%; 
@@ -150,7 +155,7 @@ header{
         }
         p{
             width: 85.6%;
-            font-family: Work Sans;
+            font-family: "Work Sans";
             font-size: 0.9875rem;
             font-weight: 400;
             line-height: 187.5%;
@@ -224,7 +229,7 @@ header{
             color: white;
             @include mixin.layout(flex, column, 0, 0);
             p{
-                font-family: Work Sans;
+                font-family: "Work Sans";
                 font-size: 1.23438rem;
                 font-weight: 400;
                 line-height: 150% ;
@@ -233,7 +238,7 @@ header{
             h2{
                 width: 40%;
                 color: #FFF;
-                font-family: Inter;
+                font-family: "Inter";
                 font-size: 5.22394rem;
                 font-weight: 700;
                 line-height: 98.455%;
@@ -244,20 +249,17 @@ header{
             gap: 2vh;
             width: 100%;
             color: #FFF;
-            font-family: Inter;
+            font-family: "Inter";
             font-size: 1.81044rem;
-            font-style: normal;
             font-weight: 700;
-            line-height: 2.05731rem; /* 113.636% */
+            line-height: 160.715% ; 
             letter-spacing: -0.0255rem;
             
             p{
-                color: #FFF;
-                font-family: Work Sans;
+                font-family: "Work Sans";
                 font-size: 1.15206rem;
-                font-style: normal;
                 font-weight: 400;
-                line-height: 1.85156rem; /* 160.715% */
+                line-height: 160.715% ;
                 letter-spacing: -0.0255rem;
             }
         }
@@ -393,6 +395,12 @@ footer{
             line-height: 110.76%;
             letter-spacing: -0.0255rem;
         }
+
+        a:hover{
+            color: black;
+            background-color: white;
+        }
+
         .socials img{
             margin-top: 15%;
             width: 5%;
@@ -423,13 +431,13 @@ footer{
                     transform: translateX(0);
                 }
                 25% {
-                    transform: translateX(100%);
+                    transform: translateX(25%);
                 }
                 50% {
                     transform: translateX(0);
                 }
                 75% {
-                    transform: translateX(-100%);
+                    transform: translateX(-25%);
                 }
                 100% {
                     transform: translateX(0);
