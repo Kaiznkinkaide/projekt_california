@@ -77,7 +77,7 @@ header{
     p{
         color: white;
     }
-.bigText{
+    .bigText{
     margin-top: 10vh;
     width: 80%;
     font-family: Inter;
@@ -97,37 +97,37 @@ header{
     align-self: start;
     align-items: center;
     justify-content: space-between;
+    .nummbersFrame{
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .nummbers{
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        p:nth-child(1){
+            font-family: Work Sans;
+            font-size: 0.875rem;
+            font-weight: 400;
+        }
+        p:nth-child(2){
+            font-family: Inter;
+            font-size: 5.42188rem;
+            font-weight: 700;
+            line-height: 125.216% ;
+            letter-spacing: -0.15469rem;
+
+        }
+    }
+    img{
+        width: 41%;
+    }
+}
 
 
-.nummbersFrame{
-    margin-top: 10%;
-    display: flex;
-    flex-direction: column;
-}
 
-.nummbers{
-    margin-top: 10%;
-    display: flex;
-    flex-direction: column;
-}
-
-.nummbers p:nth-child(1){
-    font-family: Work Sans;
-    font-size: 0.875rem;
-    font-weight: 400;
-}
-.nummbers p:nth-child(2){
-    font-family: Inter;
-    font-size: 5.42188rem;
-    font-weight: 700;
-    line-height: 125.216% ;
-    letter-spacing: -0.15469rem;
-}
-
-img{
-    width: 41%;
-}
-}
 
 .stuck{
     @include mixin.size(170vh, 100%, 0 2rem 0 0, 0);
@@ -149,7 +149,7 @@ img{
             letter-spacing: -0.07738rem;
         }
         p{
-            width: 90.6%;
+            width: 85.6%;
             font-family: Work Sans;
             font-size: 0.9875rem;
             font-weight: 400;
@@ -159,35 +159,259 @@ img{
 
         .stuckLowertext{
             margin-top: 60vh;
+            width:95%;
+        }
+    
+
+    }
+    img{
+        position: absolute;
+        height: 10%;
+    }
+    .pic1{
+        width: 25%;
+        height: 12%;
+        top: -5%;
+        right: 12%;
+    }
+    
+    .pic2{
+        top: 10%;
+        left: 6%;
+    }
+    
+    .pic3{
+        top: 35%;
+        right: 0%;
+    }
+    
+    .pic4{
+        width: 25%;
+        height: 12%;
+        top: 45%;
+        left: 12%;
+    }
+    
+    .pic5{
+        width: 25%;
+        height: 12%;
+        top: 55%;
+        right: 15%;
+    }
+    
+    .pic6{
+        top: 70%;
+        left: 0;
+    }
+    
+    .pic7{
+        width: 30%;
+        height: 12%;
+        bottom: -2.5%;
+        right: 20%;
+    }
+}
+
+.bear{
+    @include mixin.size(100vh, 100%, 0 2rem 0 0, 0);
+    @include mixin.layout(flex, column, 0, center);
+    background-color: black;
+    .bearText{
+        margin-top: 20%;
+        width: 80%;
+        @include mixin.layout(flex, row, space-between, center);
+        .golden{
+            color: white;
+            @include mixin.layout(flex, column, 0, 0);
+            p{
+                font-family: Work Sans;
+                font-size: 1.23438rem;
+                font-weight: 400;
+                line-height: 150% ;
+                letter-spacing: -0.0255rem;
+            }
+            h2{
+                width: 40%;
+                color: #FFF;
+                font-family: Inter;
+                font-size: 5.22394rem;
+                font-weight: 700;
+                line-height: 98.455%;
+            }
+        }
+        .design{
+            @include mixin.layout(flex, column, space-between, 0);
+            gap: 2vh;
+            width: 100%;
+            color: #FFF;
+            font-family: Inter;
+            font-size: 1.81044rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 2.05731rem; /* 113.636% */
+            letter-spacing: -0.0255rem;
+            
+            p{
+                color: #FFF;
+                font-family: Work Sans;
+                font-size: 1.15206rem;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1.85156rem; /* 160.715% */
+                letter-spacing: -0.0255rem;
+            }
+        }
+    
+
+    }
+    .bearPics{
+        margin-top: 10%;
+        width: 80%;
+        position: relative;
+        @include mixin.layout(flex, row, center, center);
+        img{
+            position: absolute;
+        }
+    img:nth-of-type(1){
+        top: 0;
+        left: 0;
+        width: 60%;
+    }
+    img:nth-of-type(2){
+        top: 12vh;
+        left: 55%;
+        width: 30%;
+    }
+}
+}
+
+.blanc{
+    @include mixin.size(60vh, 100%, 0 2rem 0 0, 0);
+    article {
+        max-width: 100%;
+        height: 50vh;
+        overflow: hidden;
+        position: relative;
+        img{
+            z-index: -1;
+            position: absolute;
+            height: 90%;
+            top: -30%;
+            right: -12%;
+            animation: circle 15s 0.1s linear infinite;
+        }
+        @keyframes circle {
+            from {
+                transform: rotate(0deg);
+                }
+            to {
+                transform: rotate(360deg);
+                }
+            }
+
+    }
+
+}
+
+.popey{
+    height: 130vh;
+    background-color: rgb(235, 235, 235);
+    .popeyText{
+        margin-top: 5%;
+        color: black;
+        .popeyBear{
+            h2{
+                color: black;
+            }
+            p{
+                color: black;
+            }
+        }
+        .popeyDesign{
+            article{
+                color: black;
+            }
+            p{
+                color: black;
+            }
+            
+        }
+    }
+    .popeyPics{
+        margin-top: 10%;
+        width: 80%;
+        position: relative;
+        @include mixin.layout(flex, row, center, center);
+        img{
+            position: absolute;
+        }
+    img:nth-of-type(2){
+        top: 10vh;
+        left: 10%;
+        width: 30%;
+    }
+    img:nth-of-type(1){
+        top: 0;
+        left: 35%;
+        width: 60%;
+    }
+}
+}
+
+footer{
+    @include mixin.layout(flex, row, center, center);
+    background-color: black;
+.footerFrame{
+    width: 80%;
+    .footerText{
+        width: 50%;
+        margin-top: 15%;
+        @include mixin.layout(flex, column, 0, 0);
+        gap: 3vh;
+        color: white;
+        p{
+            font-family: Work Sans;
+            font-size: 0.75rem;
+            font-weight: 400;
+        }
+        article{
+            font-family: Inter;
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 192.014%;
+        }
+        a{
+            @include mixin.buttonStyle(none,white,1px solid #AAAe,7.5vw, 5px 10px 5px 10px);
+            text-align: center;
+            font-family: "Work Sans";
+            font-size: 1.30019rem;
+            font-weight: 400;
+            line-height: 110.76%;
+            letter-spacing: -0.0255rem;
+        }
+        .socials img{
+            margin-top: 15%;
+            width: 5%;
+        }
+    }
+    .bannerFrame{
+        .banner{
+            border: 1px solid red;
+            width: 100%;
+            height: 10%;
+            background-color: #FFF;
         }
 
+    }
 }
 }
 
-.stuck img{
-    position: absolute;
-    height: 10%;
-}
 
-.pic1{
-    top: -6%;
-    right: 12%;
-}
 
-.pic2{
-    top: 10%;
-    left: 6%;
-}
 
-.pic3{
-    top: 35%;
-    right: 0%;
-}
 
-.pic4{
-    top: 77vh;
-    left: 20vw;
-}
+
 
 
 
