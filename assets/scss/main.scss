@@ -1,0 +1,204 @@
+@use "mixin" as mixin;
+@import "font";
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+hr{
+        position: absolute;
+        top: 0;
+        border: none;
+        border-left: 1px solid white;
+        width: 0.5px;
+        height: 7.5rem;
+    }
+
+
+header{
+    @include mixin.layout(flex, column, center, center);
+    background-color: black;
+    @include mixin.size(60%, 100%, 2rem, 0)
+    
+}
+
+.headerFrame{
+    margin-top: 15vh;
+    @include mixin.layout(flex, column, center, center);
+    color: white;
+    font-family: "Inter";
+    h1{
+        font-size: 4rem;
+        width: 70%;
+        text-align: center;
+        span{
+                color: black;
+                text-shadow: 
+                1px 0 0 white,
+                0 1px 0 white,
+                -1px 0 0 white,
+                0 -1px 0 white;
+            }
+        }
+        p{
+            color: #FFF;
+            text-align: center;
+            font-family: "Work Sans";
+            font-size: 0.75rem;
+            font-weight: 400;
+            letter-spacing: -0.03125rem;
+        }
+    }
+
+.bar{
+    margin-top: 20vh;
+    width: 80%;
+    @include mixin.layout(flex, row, space-between, center);
+    a{
+        @include mixin.buttonStyle(none,white,1px solid #AAAe,7.5vw, 5px 10px 5px 10px);
+        text-align: center;
+        font-family: "Work Sans";
+        font-size: 1.30019rem;
+        font-weight: 400;
+        line-height: 110.76%;
+        letter-spacing: -0.0255rem;
+    }
+}
+
+.last{
+    background-color: black;
+    @include mixin.size(100%, 100%, 0 2rem 0 0, 0);
+    @include mixin.layout(flex, column, center, center);
+    
+    p{
+        color: white;
+    }
+.bigText{
+    margin-top: 10vh;
+    width: 80%;
+    font-family: Inter;
+    font-size: 6.10938rem;
+    font-weight: 700;
+    line-height: 111.125%;
+    letter-spacing: -0.15469rem;
+    }
+}
+
+.lowerLast{
+    margin-top: 1.5%;
+    margin-bottom: 7%;
+    width: 100%;
+    padding-left: 10%;
+    display: flex;
+    align-self: start;
+    align-items: center;
+    justify-content: space-between;
+
+
+.nummbersFrame{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nummbers{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nummbers p:nth-child(1){
+    font-family: Work Sans;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+.nummbers p:nth-child(2){
+    font-family: Inter;
+    font-size: 5.42188rem;
+    font-weight: 700;
+    line-height: 125.216% ;
+    letter-spacing: -0.15469rem;
+}
+
+img{
+    width: 41%;
+}
+}
+
+.stuck{
+    @include mixin.size(170vh, 100%, 0 2rem 0 0, 0);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .stuckArticle{
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+        width: 33%;
+        h2{
+            font-family: Inter;
+            font-size: 5.22394rem;
+            font-weight: 700;
+            line-height: 98.455%; 
+            letter-spacing: -0.07738rem;
+        }
+        p{
+            width: 90.8%;
+            font-family: Work Sans;
+            font-size: 0.9875rem;
+            font-weight: 400;
+            line-height: 187.5%;
+            letter-spacing: -0.0255rem;
+        }
+
+        .stuckLowertext{
+            margin-top: 60vh;
+        }
+
+}
+}
+
+.stuck img{
+    position: absolute;
+    height: 10%;
+}
+
+.pic1{
+    top: -9vh;
+    right: 12vw;
+}
+
+.pic2{
+    top: 17vh;
+    left: 8vw;
+}
+
+.pic3{
+    top: 57vh;
+    right: 0;
+}
+
+.pic4{
+    top: 77vh;
+    left: 20vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+
+@mixin layout($display, $flex-direction, $justify-content, $align-items) {
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin font($color, $familiy, $text-align , $size, $style, $weight, $line-height, $transform){
+    color: $color;
+    font-family: $familiy;
+    text-align: $text-align;
+    font-size: $size;
+    font-style: $style;
+    font-weight: $weight;
+    line-height: $line-height;
+    text-transform: $transform;
+}
+
+@mixin size($height, $width, $padding, $margin){
+    height: $height;
+    width: $width;
+    padding: $padding ;
+    margin: $margin;
+}
+
+@mixin buttonStyle($text-decoration,$color,$border,$width,$padding,){
+    text-decoration: $text-decoration ;
+    color: $color;
+    border: $border;
+    width: $width;
+    padding: $padding;
+}
+
+
