@@ -316,7 +316,7 @@ header{
 }
 
 .popey{
-    height: 130vh;
+    height: 120vh;
     background-color: rgb(235, 235, 235);
     .popeyText{
         margin-top: 5%;
@@ -411,7 +411,7 @@ footer{
         position: absolute;
         width: 200%;
         right: -10%;
-        bottom: 20%;
+        bottom: -5%;
         transform: translateX(50%) rotate(45deg);
         background-color: white;
         
@@ -448,13 +448,13 @@ footer{
         position: absolute;
         height: 7.5%;
         bottom: 0;
-        right: 25%;
+        right: 20%;
     }
     .ngo img:nth-of-type(2){
         position: absolute;
         height: 5%;
         bottom: 0;
-        right: 10%;
+        right: 5%;
     }
     }
 }
