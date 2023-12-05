@@ -18,7 +18,7 @@ hr {
   border: none;
   border-left: 1px solid white;
   width: 0.5px;
-  height: 7.5rem;
+  height: 10%;
 }
 
 header {
@@ -321,9 +321,9 @@ header {
 .blanc article img {
   z-index: -1;
   position: absolute;
-  height: 90%;
+  height: 120%;
   top: -30%;
-  right: -12%;
+  right: -15%;
   animation: circle 15s 0.1s linear infinite;
 }
 @keyframes circle {
@@ -379,6 +379,8 @@ header {
 }
 
 footer {
+  padding-bottom: 5%;
+  overflow: hidden;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -386,6 +388,7 @@ footer {
   background-color: black;
 }
 footer .footerFrame {
+  position: relative;
   width: 80%;
 }
 footer .footerFrame .footerText {
@@ -427,11 +430,50 @@ footer .footerFrame .footerText .socials img {
   margin-top: 15%;
   width: 5%;
 }
-footer .footerFrame .bannerFrame .banner {
-  border: 1px solid red;
-  width: 100%;
-  height: 10%;
-  background-color: #FFF;
+footer .footerFrame .bannerDiv {
+  position: absolute;
+  width: 200%;
+  right: 0;
+  bottom: 0;
+  transform: translateX(50%) rotate(45deg);
+  background-color: white;
+}
+footer .footerFrame .bannerDiv .banner {
+  font-size: 5rem;
+  animation: banner 15s 0.2s linear infinite;
+}
+footer .footerFrame .bannerDiv .banner span {
+  color: white;
+  text-shadow: 1px 0 0 black, 0 1px 0 black, -1px 0 0 black, 0 -1px 0 black;
+}
+@keyframes banner {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+footer .footerFrame .ngo img:nth-of-type(1) {
+  position: absolute;
+  height: 7.5%;
+  bottom: 0;
+  right: 25%;
+}
+footer .footerFrame .ngo img:nth-of-type(2) {
+  position: absolute;
+  height: 5%;
+  bottom: 0;
+  right: 10%;
 }
 
 /*# sourceMappingURL=style.css.map */
