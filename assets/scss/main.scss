@@ -218,7 +218,7 @@ header{
 }
 
 .bear{
-    @include mixin.size(100vh, 100%, 0 2rem 0 0, 0);
+    @include mixin.size(110vh, 100%, 0 2rem 0 0, 0);
     @include mixin.layout(flex, column, 0, center);
     background-color: black;
     .bearText{
@@ -282,7 +282,7 @@ header{
     img:nth-of-type(2){
         top: 12vh;
         left: 55%;
-        width: 30%;
+        width: 33%;
     }
 }
 }
@@ -410,8 +410,8 @@ footer{
     .bannerDiv {
         position: absolute;
         width: 200%;
-        right: 0;
-        bottom: 0;
+        right: -10%;
+        bottom: 20%;
         transform: translateX(50%) rotate(45deg);
         background-color: white;
         
@@ -431,13 +431,13 @@ footer{
                     transform: translateX(0);
                 }
                 25% {
-                    transform: translateX(25%);
+                    transform: translateX(20%);
                 }
                 50% {
                     transform: translateX(0);
                 }
                 75% {
-                    transform: translateX(-25%);
+                    transform: translateX(-20%);
                 }
                 100% {
                     transform: translateX(0);

@@ -223,7 +223,7 @@ header {
 }
 
 .bear {
-  height: 100vh;
+  height: 110vh;
   width: 100%;
   padding: 0 2rem 0 0;
   margin: 0;
@@ -304,7 +304,7 @@ header {
 .bear .bearPics img:nth-of-type(2) {
   top: 12vh;
   left: 55%;
-  width: 30%;
+  width: 33%;
 }
 
 .blanc {
@@ -438,8 +438,8 @@ footer .footerFrame .footerText .socials img {
 footer .footerFrame .bannerDiv {
   position: absolute;
   width: 200%;
-  right: 0;
-  bottom: 0;
+  right: -10%;
+  bottom: 20%;
   transform: translateX(50%) rotate(45deg);
   background-color: white;
 }
@@ -456,13 +456,13 @@ footer .footerFrame .bannerDiv .banner span {
     transform: translateX(0);
   }
   25% {
-    transform: translateX(25%);
+    transform: translateX(20%);
   }
   50% {
     transform: translateX(0);
   }
   75% {
-    transform: translateX(-25%);
+    transform: translateX(-20%);
   }
   100% {
     transform: translateX(0);
